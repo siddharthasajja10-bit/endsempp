@@ -1,0 +1,104 @@
+/* Background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: white;
+  padding: 40px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Floating input group */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: none;
+}
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  color: #777;
+  font-size: 14px;
+  transition: 0.3s ease;
+  pointer-events: none;
+  background: white;
+  padding: 0 5px;
+}
+
+/* Floating animation */
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  color: #667eea;
+}
+
+.input-group input:focus {
+  border-color: #667eea;
+}
+
+/* Remember Me */
+.remember-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.remember-row input {
+  margin-right: 8px;
+}
+
+/* Button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+    padding: 25px;
+  }
+}
